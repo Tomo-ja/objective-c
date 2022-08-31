@@ -10,7 +10,6 @@
 
 
 @implementation Person
-
 - (instancetype)initWithName: (NSString *)name andAge: (NSUInteger)age
 {
 	self = [super init];
@@ -26,7 +25,12 @@
 }
 
 + (void)hello {
-	NSLog(@"Hello!")
+	NSLog(@"Hello!");
 }
+
+//- (void) setName:(NSString *)name {
+//	_name = name;
+//}
+
 
 @end
