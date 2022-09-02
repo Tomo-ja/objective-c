@@ -16,6 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)addContact: (Contact *)newContact;
 - (void)displayAllContacts;
+- (void)showContactDetail: (NSString *)id;
+- (void)searchContact: (NSString *)keyword;
+- (BOOL)isAlreadyExist: (NSString *)newEmail ;
 
 @end
 

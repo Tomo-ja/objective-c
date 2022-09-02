@@ -10,7 +10,12 @@
 #import "Contact.h"
 #import "ContactList.h"
 
-NSString *menuPrompt = @"\nWhat would you like to do next?\nnew - Create a new contact\nlist - List all contacts\nquit - Exit Application";
+NSString *menuPrompt = @"\nWhat would you like to do next?"
+						"\nnew - Create a new contact"
+						"\nlist - List all contacts"
+						"\nshow - See contact details"
+						"\nfind - Find contact by keyword"
+						"\nquit - Exit Application";
 
 int main(int argc, const char * argv[]) {
 	@autoreleasepool {
@@ -23,14 +28,28 @@ int main(int argc, const char * argv[]) {
 			NSString *nextAction = [inputConllector inputForPrompt:menuPrompt];
 			
 			if ([nextAction isEqualToString:@"new"]){
-				NSString *name = [inputConllector inputForPrompt:@"Enter new contact name"];
 				NSString *email = [inputConllector inputForPrompt:@"Enter new contact email"];
+				if ([contactList isAlreadyExist:email]){
+					NSLog(@"account already exist with email: %@", email);
+					continue;
+				}
+				NSString *name = [inputConllector inputForPrompt:@"Enter new contact name"];
 				Contact *newContact = [[Contact alloc] initWithName:name andEmail:email];
 				[contactList addContact:newContact];
 			}
 			
 			if ([nextAction isEqualToString:@"list"]) {
 				[contactList displayAllContacts];
+			}
+			
+			if ([nextAction isEqualToString:@"show"]){
+				NSString *id = [inputConllector inputForPrompt:@"Enter contact id"];
+				[contactList showContactDetail:id];
+			}
+			
+			if ([nextAction isEqualToString:@"find"]){
+				NSString *keyword = [inputConllector inputForPrompt:@"Enter key word you want to search by"];
+				[contactList searchContact:keyword];
 			}
 			
 			if ([nextAction isEqualToString:@"quit"]){
