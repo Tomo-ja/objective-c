@@ -14,7 +14,7 @@
 {
 	self = [super init];
 	if (self) {
-		NSArray *_questionSubclassNames = @[@"AdditionQuestion", @"SubtractionQuestion", @"MultiplicationQuestion", @"DivisionQuestion"];
+		_questionSubclassNames = @[@"AdditionQuestion", @"SubtractionQuestion", @"MultiplicationQuestion", @"DivisionQuestion"];
 	}
 	return self;
 }
@@ -22,7 +22,7 @@
 
 -(Question *)generateQuestion{
 	int idx = arc4random_uniform(4);
-	NSString *className = [[self questionSubclassNames] objectAtIndex:idx];
+	NSString *className = [_questionSubclassNames objectAtIndex:idx];
 	return [[NSClassFromString(className) alloc]init];
 }
 

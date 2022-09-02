@@ -19,11 +19,11 @@ int main(int argc, const char * argv[]) {
 		BOOL gameOn = 1;
 		ScoreKeeper *score = [[ScoreKeeper alloc] init];
 		QuestionManager *manager = [[QuestionManager alloc] init];
-		
+		QuestionFactory *factory = [[QuestionFactory alloc] init];
 		
 		
 		while (gameOn) {
-			Question *question = [[Question alloc] init];
+			Question *question = [factory generateQuestion];
 			[[manager questions] addObject:question];
 			NSLog(@"%@", [question question]);
 			

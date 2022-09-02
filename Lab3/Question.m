@@ -19,8 +19,8 @@
 		
 		_startTime = [NSDate date];
 		
-		_question = [NSString stringWithFormat:@"%lu + %lu ?", _leftValue, _rightValue];
-		_answer = _leftValue + _rightValue;
+		_question = @"";
+		_answer = 0;
 	}
 	return self;
 }
