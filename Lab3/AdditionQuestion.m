@@ -13,13 +13,14 @@
 {
 	self = [super init];
 	if (self) {
-
-		NSUInteger l = arc4random_uniform(91) + 10;
-		NSUInteger r = arc4random_uniform(91) + 10;
-		
-		_question = [NSString stringWithFormat:@"%lu + %lu ?", l, r];
-		_answer = l + r;
+		[self generateQuestion];
 	}
 	return self;
 }
+
+-(void)generateQuestion {
+	[self setAnswer:[self leftValue] + [self rightValue]];
+	[self setQuestion:[NSString stringWithFormat:@"%lu + %lu ?", [self leftValue], [self rightValue]]];
+}
+
 @end
