@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E50938A628C8749D002CAA50 /* NSString+PigLatinization.m in Sources */ = {isa = PBXBuildFile; fileRef = E50938A528C8749D002CAA50 /* NSString+PigLatinization.m */; };
 		E51E329028C7B02B0003FAF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E51E328F28C7B02B0003FAF6 /* main.m */; };
 		E51E329B28C7B0460003FAF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E51E329A28C7B0460003FAF6 /* main.m */; };
 		E51E32A128C7C90F0003FAF6 /* Dice.m in Sources */ = {isa = PBXBuildFile; fileRef = E51E32A028C7C90F0003FAF6 /* Dice.m */; };
@@ -109,6 +110,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E50938A428C8749D002CAA50 /* NSString+PigLatinization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+PigLatinization.h"; sourceTree = "<group>"; };
+		E50938A528C8749D002CAA50 /* NSString+PigLatinization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+PigLatinization.m"; sourceTree = "<group>"; };
 		E51E328D28C7B02B0003FAF6 /* Lab6 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab6; sourceTree = BUILT_PRODUCTS_DIR; };
 		E51E328F28C7B02B0003FAF6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E51E329828C7B0460003FAF6 /* Lab7 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab7; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -235,6 +238,8 @@
 			isa = PBXGroup;
 			children = (
 				E51E329A28C7B0460003FAF6 /* main.m */,
+				E50938A428C8749D002CAA50 /* NSString+PigLatinization.h */,
+				E50938A528C8749D002CAA50 /* NSString+PigLatinization.m */,
 			);
 			path = Lab7;
 			sourceTree = "<group>";
@@ -559,6 +564,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E50938A628C8749D002CAA50 /* NSString+PigLatinization.m in Sources */,
 				E51E329B28C7B0460003FAF6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
