@@ -14,7 +14,7 @@ NSDictionary *clusters = @{ @"Ch": @2, @"Sh": @2, @"Sm": @2, @"St": @2, @"Th": @
 int main(int argc, const char * argv[]) {
 	@autoreleasepool {
 
-		NSString *testString = @"Kale Chips";
+		NSString *testString = @"Kale is Chips";
 		NSLog(@"%@", [testString stringByPigLatinization]);
 	}
 	return 0;

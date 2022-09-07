@@ -16,7 +16,7 @@
 	NSDictionary *vowel = @{@"A": @-1, @"I": @-1, @"U": @-1, @"E": @-1, @"O": @-1,};
 	
 	int consonant = clusters[[word substringToIndex:2]] == 0 ? vowel[[word substringToIndex:1]] == 0 ? 1 : 0 : 2;
-	return [[word substringFromIndex:consonant] stringByAppendingFormat:@"%@ay", [word substringToIndex:consonant]];
+	return consonant != 0 ? [[word substringFromIndex:consonant] stringByAppendingFormat:@"%@ay", [word substringToIndex:consonant]] : word;
 }
 
 -(NSString *)stringByPigLatinization
@@ -24,7 +24,7 @@
 	NSArray *stringArray = [self componentsSeparatedByString:@" "];
 	NSString *string = @"";
 	for (NSString *word in stringArray){
-		string = [string stringByAppendingFormat:@"%@ ", [[self wordByPigLatinization:word] capitalizedString]];
+		string = [string stringByAppendingFormat:@"%@ ", [[self wordByPigLatinization:[word capitalizedString]] capitalizedString]];
 	}
 	return string;
 }
