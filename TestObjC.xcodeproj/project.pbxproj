@@ -32,6 +32,10 @@
 		E5A921E528C270CA004EA2FB /* InputConllector.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A921E428C270CA004EA2FB /* InputConllector.m */; };
 		E5A921E828C273BE004EA2FB /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A921E728C273BE004EA2FB /* Contact.m */; };
 		E5A921EB28C27561004EA2FB /* ContactList.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A921EA28C27561004EA2FB /* ContactList.m */; };
+		E5DD47D728CA5EB200595D05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DD47D628CA5EB200595D05 /* main.m */; };
+		E5DD47DE28CA5EEB00595D05 /* Greeter.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DD47DD28CA5EEB00595D05 /* Greeter.m */; };
+		E5DD47E128CA5F5600595D05 /* FriendlyGreedingDecider.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DD47E028CA5F5600595D05 /* FriendlyGreedingDecider.m */; };
+		E5DD47E428CA5F6400595D05 /* AngryGreedingDecider.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DD47E328CA5F6400595D05 /* AngryGreedingDecider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -107,6 +111,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		E5DD47D228CA5EB200595D05 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -160,6 +173,15 @@
 		E5A921E728C273BE004EA2FB /* Contact.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
 		E5A921E928C27561004EA2FB /* ContactList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactList.h; sourceTree = "<group>"; };
 		E5A921EA28C27561004EA2FB /* ContactList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactList.m; sourceTree = "<group>"; };
+		E5DD47D428CA5EB200595D05 /* Lab8 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab8; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5DD47D628CA5EB200595D05 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E5DD47DB28CA5ECA00595D05 /* GreeterDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GreeterDelegate.h; sourceTree = "<group>"; };
+		E5DD47DC28CA5EEB00595D05 /* Greeter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Greeter.h; sourceTree = "<group>"; };
+		E5DD47DD28CA5EEB00595D05 /* Greeter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Greeter.m; sourceTree = "<group>"; };
+		E5DD47DF28CA5F5600595D05 /* FriendlyGreedingDecider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendlyGreedingDecider.h; sourceTree = "<group>"; };
+		E5DD47E028CA5F5600595D05 /* FriendlyGreedingDecider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendlyGreedingDecider.m; sourceTree = "<group>"; };
+		E5DD47E228CA5F6400595D05 /* AngryGreedingDecider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AngryGreedingDecider.h; sourceTree = "<group>"; };
+		E5DD47E328CA5F6400595D05 /* AngryGreedingDecider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AngryGreedingDecider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +241,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E5DD47D128CA5EB200595D05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -255,6 +284,7 @@
 				E5A921DD28C26AD0004EA2FB /* Lab5 */,
 				E51E328E28C7B02B0003FAF6 /* Lab6 */,
 				E51E329928C7B0460003FAF6 /* Lab7 */,
+				E5DD47D528CA5EB200595D05 /* Lab8 */,
 				E524CA7C28BD1F3800F088E0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -270,6 +300,7 @@
 				E5A921DC28C26AD0004EA2FB /* Lab5 */,
 				E51E328D28C7B02B0003FAF6 /* Lab6 */,
 				E51E329828C7B0460003FAF6 /* Lab7 */,
+				E5DD47D428CA5EB200595D05 /* Lab8 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -348,6 +379,21 @@
 				E5A921EA28C27561004EA2FB /* ContactList.m */,
 			);
 			path = Lab5;
+			sourceTree = "<group>";
+		};
+		E5DD47D528CA5EB200595D05 /* Lab8 */ = {
+			isa = PBXGroup;
+			children = (
+				E5DD47D628CA5EB200595D05 /* main.m */,
+				E5DD47DB28CA5ECA00595D05 /* GreeterDelegate.h */,
+				E5DD47DC28CA5EEB00595D05 /* Greeter.h */,
+				E5DD47DD28CA5EEB00595D05 /* Greeter.m */,
+				E5DD47DF28CA5F5600595D05 /* FriendlyGreedingDecider.h */,
+				E5DD47E028CA5F5600595D05 /* FriendlyGreedingDecider.m */,
+				E5DD47E228CA5F6400595D05 /* AngryGreedingDecider.h */,
+				E5DD47E328CA5F6400595D05 /* AngryGreedingDecider.m */,
+			);
+			path = Lab8;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -489,6 +535,23 @@
 			productReference = E5A921DC28C26AD0004EA2FB /* Lab5 */;
 			productType = "com.apple.product-type.tool";
 		};
+		E5DD47D328CA5EB200595D05 /* Lab8 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5DD47DA28CA5EB200595D05 /* Build configuration list for PBXNativeTarget "Lab8" */;
+			buildPhases = (
+				E5DD47D028CA5EB200595D05 /* Sources */,
+				E5DD47D128CA5EB200595D05 /* Frameworks */,
+				E5DD47D228CA5EB200595D05 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lab8;
+			productName = Lab8;
+			productReference = E5DD47D428CA5EB200595D05 /* Lab8 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -522,6 +585,9 @@
 					E5A921DB28C26AD0004EA2FB = {
 						CreatedOnToolsVersion = 13.3;
 					};
+					E5DD47D328CA5EB200595D05 = {
+						CreatedOnToolsVersion = 13.3;
+					};
 				};
 			};
 			buildConfigurationList = E524CA7628BD1F3800F088E0 /* Build configuration list for PBXProject "TestObjC" */;
@@ -545,6 +611,7 @@
 				E5A921DB28C26AD0004EA2FB /* Lab5 */,
 				E51E328C28C7B02B0003FAF6 /* Lab6 */,
 				E51E329728C7B0460003FAF6 /* Lab7 */,
+				E5DD47D328CA5EB200595D05 /* Lab8 */,
 			);
 		};
 /* End PBXProject section */
@@ -628,6 +695,17 @@
 				E5A921DF28C26AD0004EA2FB /* main.m in Sources */,
 				E5A921E828C273BE004EA2FB /* Contact.m in Sources */,
 				E5A921E528C270CA004EA2FB /* InputConllector.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5DD47D028CA5EB200595D05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5DD47DE28CA5EEB00595D05 /* Greeter.m in Sources */,
+				E5DD47E128CA5F5600595D05 /* FriendlyGreedingDecider.m in Sources */,
+				E5DD47D728CA5EB200595D05 /* main.m in Sources */,
+				E5DD47E428CA5F6400595D05 /* AngryGreedingDecider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -871,6 +949,22 @@
 			};
 			name = Release;
 		};
+		E5DD47D828CA5EB200595D05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E5DD47D928CA5EB200595D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -951,6 +1045,15 @@
 			buildConfigurations = (
 				E5A921E128C26AD0004EA2FB /* Debug */,
 				E5A921E228C26AD0004EA2FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5DD47DA28CA5EB200595D05 /* Build configuration list for PBXNativeTarget "Lab8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5DD47D828CA5EB200595D05 /* Debug */,
+				E5DD47D928CA5EB200595D05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
