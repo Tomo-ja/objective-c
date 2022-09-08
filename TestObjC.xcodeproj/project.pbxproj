@@ -36,6 +36,7 @@
 		E5DD47DE28CA5EEB00595D05 /* Greeter.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DD47DD28CA5EEB00595D05 /* Greeter.m */; };
 		E5DD47E128CA5F5600595D05 /* FriendlyGreedingDecider.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DD47E028CA5F5600595D05 /* FriendlyGreedingDecider.m */; };
 		E5DD47E428CA5F6400595D05 /* AngryGreedingDecider.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DD47E328CA5F6400595D05 /* AngryGreedingDecider.m */; };
+		E5DD47E728CA601E00595D05 /* FoodTruck.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DD47E628CA601E00595D05 /* FoodTruck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -182,6 +183,8 @@
 		E5DD47E028CA5F5600595D05 /* FriendlyGreedingDecider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendlyGreedingDecider.m; sourceTree = "<group>"; };
 		E5DD47E228CA5F6400595D05 /* AngryGreedingDecider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AngryGreedingDecider.h; sourceTree = "<group>"; };
 		E5DD47E328CA5F6400595D05 /* AngryGreedingDecider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AngryGreedingDecider.m; sourceTree = "<group>"; };
+		E5DD47E528CA601E00595D05 /* FoodTruck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoodTruck.h; sourceTree = "<group>"; };
+		E5DD47E628CA601E00595D05 /* FoodTruck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoodTruck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -392,6 +395,8 @@
 				E5DD47E028CA5F5600595D05 /* FriendlyGreedingDecider.m */,
 				E5DD47E228CA5F6400595D05 /* AngryGreedingDecider.h */,
 				E5DD47E328CA5F6400595D05 /* AngryGreedingDecider.m */,
+				E5DD47E528CA601E00595D05 /* FoodTruck.h */,
+				E5DD47E628CA601E00595D05 /* FoodTruck.m */,
 			);
 			path = Lab8;
 			sourceTree = "<group>";
@@ -705,6 +710,7 @@
 				E5DD47DE28CA5EEB00595D05 /* Greeter.m in Sources */,
 				E5DD47E128CA5F5600595D05 /* FriendlyGreedingDecider.m in Sources */,
 				E5DD47D728CA5EB200595D05 /* main.m in Sources */,
+				E5DD47E728CA601E00595D05 /* FoodTruck.m in Sources */,
 				E5DD47E428CA5F6400595D05 /* AngryGreedingDecider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
