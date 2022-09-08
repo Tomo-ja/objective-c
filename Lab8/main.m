@@ -6,11 +6,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Cook.h"
+#import "FoodTruck.h"
 
 int main(int argc, const char * argv[]) {
 	@autoreleasepool {
-	    // insert code here...
-	    NSLog(@"Hello, World!");
+		Cook *cook = [[Cook alloc] init];
+		FoodTruck *foodTruck = [[FoodTruck alloc] init];
+		
+		foodTruck.delegate = cook;
+		
 	}
 	return 0;
 }
