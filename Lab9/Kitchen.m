@@ -7,7 +7,17 @@
 
 #import "Kitchen.h"
 
+
 @implementation Kitchen
+
+- (instancetype)initWithDeliveryService: (DeliveryService *)deliveeryService
+{
+	self = [super init];
+	if (self) {
+		_deliveryService = deliveeryService;
+	}
+	return self;
+}
 
 - (Pizza *)makePizzaWithSize:(PizzaSize)size toppings:(NSArray *)toppings
 {
@@ -26,6 +36,7 @@
 	
 	if([_delegate respondsToSelector:@selector(kitchenDidMakePizza:)]) {
 		[_delegate kitchenDidMakePizza: pizza];
+		[_deliveryService deliverPizza: pizza];
 	}
 	
 	return pizza;

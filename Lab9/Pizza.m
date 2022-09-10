@@ -37,4 +37,25 @@
 	return _toppings;
 }
 
+-(NSString *)sizeString
+{
+	switch(_size) {
+		case small:
+			return @"small";
+		case medium:
+			return @"medium";
+		case large:
+			return @"large";
+	}
+}
+
+-(NSString *)toppingsString
+{
+	NSString *res = @"";
+	for (NSString *t in _toppings) {
+		res = [res stringByAppendingString: t];
+	}
+	return res;
+}
+
 @end

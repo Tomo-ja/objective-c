@@ -25,4 +25,6 @@
 	NSLog(@"Buono~~");
 }
 
+-(void)kitchenDidMakePizza:(Pizza *)pizza{}
+
 @end

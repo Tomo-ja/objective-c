@@ -11,6 +11,8 @@
 #import "FirstManager.h"
 #import "SecoundManager.h"
 #import "RegularCustomer.h"
+#import "DeliveryService.h"
+
 
 PizzaSize pizzaSizeDecider(NSString* inputedSize) {
 	if ([inputedSize isEqualToString:@"small"]) {
@@ -28,13 +30,16 @@ PizzaSize pizzaSizeDecider(NSString* inputedSize) {
 int main(int argc, const char * argv[]) {
 	@autoreleasepool {
 		
-		NSLog(@"Please pick your pizza size and toppings:");
+	
 		
-		Kitchen *restaurantKitchen = [Kitchen new];
+		DeliveryService *deliveryService = [DeliveryService new];
+		Kitchen *restaurantKitchen = [[Kitchen alloc] initWithDeliveryService:deliveryService];
+		RegularCustomer *regularCustomer = [RegularCustomer new];
 		FirstManager *firstManager = [FirstManager new];
 		SecoundManager *secoundManager = [SecoundManager new];
-		RegularCustomer *regularCustomer = [RegularCustomer new];
 		
+		NSLog(@"Please pick your pizza size and toppings:");
+
 		int managerId = 0;
 		
 		while (TRUE) {
@@ -72,6 +77,8 @@ int main(int argc, const char * argv[]) {
 			
 			// And then send some message to the kitchen...
 			Pizza *pizza = [restaurantKitchen makePizzaWithSize: size toppings: commandWords];
+			
+			NSLog(@"%@", [restaurantKitchen.deliveryService deliverdPizzaRecords]);
 		}
 
 	}

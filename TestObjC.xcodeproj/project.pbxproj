@@ -44,6 +44,8 @@
 		E5DD47FF28CCF26D00595D05 /* FirstManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DD47FE28CCF26D00595D05 /* FirstManager.m */; };
 		E5DD480228CCF34500595D05 /* SecoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DD480128CCF34500595D05 /* SecoundManager.m */; };
 		E5DD480528CCFB7300595D05 /* RegularCustomer.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DD480428CCFB7300595D05 /* RegularCustomer.m */; };
+		E5DD480828CD02E300595D05 /* DeliveryCar.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DD480728CD02E300595D05 /* DeliveryCar.m */; };
+		E5DD480B28CD02F300595D05 /* DeliveryService.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DD480A28CD02F300595D05 /* DeliveryService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -216,6 +218,10 @@
 		E5DD480128CCF34500595D05 /* SecoundManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecoundManager.m; sourceTree = "<group>"; };
 		E5DD480328CCFB7300595D05 /* RegularCustomer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegularCustomer.h; sourceTree = "<group>"; };
 		E5DD480428CCFB7300595D05 /* RegularCustomer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegularCustomer.m; sourceTree = "<group>"; };
+		E5DD480628CD02E300595D05 /* DeliveryCar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeliveryCar.h; sourceTree = "<group>"; };
+		E5DD480728CD02E300595D05 /* DeliveryCar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeliveryCar.m; sourceTree = "<group>"; };
+		E5DD480928CD02F300595D05 /* DeliveryService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeliveryService.h; sourceTree = "<group>"; };
+		E5DD480A28CD02F300595D05 /* DeliveryService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeliveryService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -458,6 +464,10 @@
 				E5DD480128CCF34500595D05 /* SecoundManager.m */,
 				E5DD480328CCFB7300595D05 /* RegularCustomer.h */,
 				E5DD480428CCFB7300595D05 /* RegularCustomer.m */,
+				E5DD480628CD02E300595D05 /* DeliveryCar.h */,
+				E5DD480728CD02E300595D05 /* DeliveryCar.m */,
+				E5DD480928CD02F300595D05 /* DeliveryService.h */,
+				E5DD480A28CD02F300595D05 /* DeliveryService.m */,
 			);
 			path = Lab9;
 			sourceTree = "<group>";
@@ -802,6 +812,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5DD480828CD02E300595D05 /* DeliveryCar.m in Sources */,
+				E5DD480B28CD02F300595D05 /* DeliveryService.m in Sources */,
 				E5DD480528CCFB7300595D05 /* RegularCustomer.m in Sources */,
 				E5DD480228CCF34500595D05 /* SecoundManager.m in Sources */,
 				E5DD47FF28CCF26D00595D05 /* FirstManager.m in Sources */,

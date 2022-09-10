@@ -22,6 +22,9 @@ typedef NS_ENUM(NSUInteger, PizzaSize) {
 -(PizzaSize)size;
 -(NSArray *)toppings;
 
+-(NSString *)toppingsString;
+-(NSString *)sizeString;
+
 @end
 
 NS_ASSUME_NONNULL_END

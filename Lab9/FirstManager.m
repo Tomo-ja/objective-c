@@ -18,5 +18,6 @@
 {
 	return NO;
 }
+-(void)kitchenDidMakePizza:(Pizza *)pizza{}
 
 @end

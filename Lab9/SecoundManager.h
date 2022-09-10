@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 -(BOOL)kitchen:(Kitchen *)kitchen shouldMakePizzaOfSize:(PizzaSize)size andToppings:(NSArray *)toppings;
 -(BOOL)kitchenShouldUpgradeOrder:(Kitchen *)kitchen;
 
+-(void)kitchenDidMakePizza:(Pizza *)pizza;
+
 @end
 
 NS_ASSUME_NONNULL_END
