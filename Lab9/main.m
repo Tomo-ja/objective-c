@@ -8,6 +8,22 @@
 #import <Foundation/Foundation.h>
 #import "Kitchen.h"
 #import "Pizza.h"
+#import "FirstManager.h"
+#import "SecoundManager.h"
+#import "RegularCustomer.h"
+
+PizzaSize pizzaSizeDecider(NSString* inputedSize) {
+	if ([inputedSize isEqualToString:@"small"]) {
+		return (PizzaSize)small;
+	} else if ([inputedSize isEqualToString:@"medium"]) {
+		return (PizzaSize)medium;
+	} else if ([inputedSize isEqualToString:@"large"]) {
+		return (PizzaSize)large;
+	} else {
+		 return (PizzaSize)medium;
+	}
+	
+}
 
 int main(int argc, const char * argv[]) {
 	@autoreleasepool {
@@ -15,9 +31,13 @@ int main(int argc, const char * argv[]) {
 		NSLog(@"Please pick your pizza size and toppings:");
 		
 		Kitchen *restaurantKitchen = [Kitchen new];
+		FirstManager *firstManager = [FirstManager new];
+		SecoundManager *secoundManager = [SecoundManager new];
+		RegularCustomer *regularCustomer = [RegularCustomer new];
+		
+		int managerId = 0;
 		
 		while (TRUE) {
-			// Loop forever
 			
 			NSLog(@"> ");
 			char str[100];
@@ -28,30 +48,30 @@ int main(int argc, const char * argv[]) {
 			
 			NSLog(@"Input was %@", inputString);
 			
+			// select manager
+			NSLog(@"Input Manager ID. if you are not, put 0");
+			fgets (str, 100, stdin);
+			NSString *managerStringId = [[NSString alloc] initWithUTF8String:str];
+			managerStringId = [managerStringId stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+			managerId = [managerStringId intValue];
+			
+			if(managerId == 1) {
+				restaurantKitchen.delegate = firstManager;
+			} else if (managerId == 2) {
+				restaurantKitchen.delegate = secoundManager;
+			} else {
+				restaurantKitchen.delegate = regularCustomer;
+			}
+			
 			// Take the first word of the command as the size, and the rest as the toppings
 			NSMutableArray *commandWords = [inputString componentsSeparatedByString:@" "];
 			NSString *commandSize = commandWords[0];
-			PizzaSize size;
-			if ([commandSize isEqualToString:@"small"]) {
-				size = (PizzaSize)small;
-			} else if ([commandSize isEqualToString:@"medium"]) {
-				size = (PizzaSize)medium;
-			} else if ([commandSize isEqualToString:@"large"]) {
-				size = (PizzaSize)large;
-			} else {
-				size = (PizzaSize)medium;
-			}
 			
+			PizzaSize size = pizzaSizeDecider(commandSize);
 			[commandWords removeObjectAtIndex:0];
 			
-			Pizza *pizza = [[Pizza alloc] initWithSize:size andToppings:commandWords];
-			
-			NSLog(@"%lu", [pizza size]);
-			NSLog(@"%@", [pizza toppings]);
-			
-			
 			// And then send some message to the kitchen...
-			
+			Pizza *pizza = [restaurantKitchen makePizzaWithSize: size toppings: commandWords];
 		}
 
 	}
